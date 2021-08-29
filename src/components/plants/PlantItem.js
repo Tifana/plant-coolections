@@ -1,7 +1,9 @@
+import Card from '../ui/Card.js'
 import classes from './PlantItem.module.css'
 
 function PlantItem(props) {
     return (
+        <Card>
         <li className={classes.item}>
             <div className={classes.image}>
                 <img src={props.image} alt={props.title} />
@@ -15,6 +17,8 @@ function PlantItem(props) {
                 <button>Add</button>
             </div>
         </li>
+        </Card>
+
     )
 }
 
